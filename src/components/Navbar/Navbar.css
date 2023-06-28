@@ -1,0 +1,54 @@
+.navbar {
+  box-shadow: 0px 0.1px 0.1px 0.1px #000;
+  height: 3.6rem;
+}
+.logo {
+  height: 2.5rem;
+}
+.moto {
+  font-size: 12px;
+  font-family: "Open Sans";
+  fill: #8f8f8f;
+  color: #8f8f8f;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 12px;
+  text-align: center;
+  margin: 8px;
+}
+
+
+
+.class {
+  width: 25%;
+}
+.profile {
+  height: 1.66rem;
+  width: 1.66rem;
+  border-radius: 50%;
+  background-color: #133d7a;
+  cursor: pointer;
+}
+.p-text {
+  color: #ffff;
+  font-family: "Open Sans";
+  font-size: 10px;
+  font-weight: 600;
+  transform: translateY(5px);
+  text-align: center;
+}
+.my-profile {
+  font-size: 10px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  cursor: pointer;
+}
+.transY {
+  margin-left: 3px;
+  transform: translateY(-7px);
+}
+
+.transYs {
+  margin-left: 2.5rem;
+  transform: translateY(-7px);
+}

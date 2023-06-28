@@ -1,0 +1,13 @@
+.icon {
+    height: 1.86rem;
+    width: 1.86rem;
+    cursor: pointer;
+}
+
+.icon-text {
+    font-size: 10px;
+    font-weight: 600;
+    font-family: "Open Sans";
+    color: #333333;
+    cursor: pointer;
+}
