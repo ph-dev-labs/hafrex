@@ -1,6 +1,6 @@
 .profiles {
-    height: 4.66rem;
-    width: 4.66rem;
+    height: 3.66rem;
+    width: 3.66rem;
     border-radius: 50%;
     background-color: #133d7a;
     cursor: pointer;
@@ -10,7 +10,7 @@
     font-family: "Open Sans";
     font-size: 20px;
     font-weight: 600;
-    transform: translateY(23px);
+    transform: translateY(15px);
     text-align: center;
   }
   .my-profiles {
@@ -20,6 +20,3 @@
     cursor: pointer;
   }
 
-.empty {
-    display: none;
-}
