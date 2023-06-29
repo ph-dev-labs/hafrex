@@ -26,7 +26,7 @@ const Sidebar = (props) => {
             </div>
           </div>
           <div>
-            <div className="d-flex flex-row justify-content-evenly align-items-center s-p">
+            <div className="d-flex flex-row justify-content-between align-items-center s-p3">
               <img src={Add} alt="logo" className="job-seeker" />
               <p className="s-text">Candidate</p>
             </div>
@@ -37,19 +37,19 @@ const Sidebar = (props) => {
               <p className="links">Selected candidate</p>
             </div>
           </div>
-          <div className="d-flex flex-row justify-content-evenly align-items-center s-p">
+          <div className="d-flex flex-row justify-content-between align-items-center s-p1">
               <img src={Network} alt="logo" className="job-seeker" />
               <p className="s-text">Referral</p>
             </div>
-            <div className="d-flex flex-row justify-content-evenly align-items-center s-p">
+            <div className="d-flex flex-row justify-content-evenly align-items-center s-p1 v-u">
               <img src={User} alt="logo" className="job-seeker" />
-              <p className="s-text">View user</p>
+              <p className="s-text">View user/ update profile</p>
             </div>
-            <div className="d-flex flex-row justify-content-evenly align-items-center s-p">
+            <div className="d-flex flex-row justify-content-around align-items-center s-p1 s">
               <img src={Setting} alt="logo" className="job-seeker" />
               <p className="s-text">Setting</p>
             </div>
-            <div className="d-flex flex-row justify-content-evenly align-items-center s-p">
+            <div className="d-flex flex-row justify-content-around align-items-center s-p1 s">
               <img src={SignOut} alt="logo" className="job-seeker" />
               <p className="s-text"> Logout</p>
             </div>
