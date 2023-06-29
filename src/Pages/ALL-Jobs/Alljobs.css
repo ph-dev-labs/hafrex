@@ -37,3 +37,35 @@ select {
     margin: 3px;
     width: 10rem;
 }
+
+.job-details {
+    background-color: #EDF9FF;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-item {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .pagination-item.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .pagination-item:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
