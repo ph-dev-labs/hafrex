@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import "./Alljobs.css";
 import Details from "../../components/Job-details/Details";
 import jobData from "../../utilis/Data";
+
 const AllJobs = () => {
   const [currentPage, setCurrentPage] = useState(1);
+ 
+
   const totalResults = 50;
   const resultsPerPage = 10;
   const totalPages = Math.ceil(totalResults / resultsPerPage);
@@ -12,6 +15,7 @@ const AllJobs = () => {
     setCurrentPage(pageNumber);
   };
 
+  
   const renderPagination = () => {
     const paginationItems = [];
 
@@ -19,7 +23,9 @@ const AllJobs = () => {
       paginationItems.push(
         <button
           key={pageNumber}
-          className={`pagination-item ${pageNumber === currentPage ? "active" : ""}`}
+          className={`pagination-item ${
+            pageNumber === currentPage ? "active" : ""
+          }`}
           onClick={() => handlePageChange(pageNumber)}
         >
           {pageNumber}
@@ -29,34 +35,35 @@ const AllJobs = () => {
 
     return (
       <div className="pagination-container">
-        <div 
+        <div
           disabled={currentPage === 1}
           className="pagination-item"
           onClick={() => handlePageChange(currentPage - 1)}
-        >
-        </div>
+        ></div>
         {paginationItems}
         <div
           disabled={currentPage === totalPages}
           className="pagination-item"
           onClick={() => handlePageChange(currentPage + 1)}
-        >
-          
-        </div>
+        ></div>
       </div>
     );
   };
 
   const renderJobDetails = () => {
-    const startIndex = (currentPage) * resultsPerPage;
+    const startIndex = (currentPage - 1) * resultsPerPage;
     const endIndex = startIndex + resultsPerPage;
 
-    // Simulating job data for demonstration
-   
-
-    return jobData.slice(startIndex, endIndex).map((job, index) => (
-      <Details key={index} title={job.title} company={job.company} />
-    ));
+    return jobData
+      .slice(startIndex, endIndex)
+      .map((job, index) => (
+        <Details
+          key={index}
+          id={job.id}
+          title={job.title}
+          company={job.company}
+        />
+      ));
   };
 
   return (
@@ -84,12 +91,8 @@ const AllJobs = () => {
         </div>
         <p className="all-job h-w">50 results for UI/UX Designer</p>
       </div>
-      <div className="job-details">
-        {renderJobDetails()}
-      </div>
-      <div className="pagination-container">
-        {renderPagination()}
-      </div>
+      <div className="job-details">{renderJobDetails()}</div>
+      <div className="pagination-container">{renderPagination()}</div>
     </div>
   );
 };

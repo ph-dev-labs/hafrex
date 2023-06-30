@@ -20,8 +20,13 @@ button {
     text-align: center;
     font-size: 13px;
     border-radius: 3px;
-    border: 2px solid#486284;
+    border: 1px solid#486284;
     font-weight: 300;
     font-family: "Open Sans";
     text-transform: uppercase;
+    margin-right: 1rem;
+}
+
+.p-t {
+    transform: translateY(.8rem)
 }
