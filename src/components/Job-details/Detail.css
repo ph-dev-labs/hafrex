@@ -30,3 +30,39 @@ button {
 .p-t {
     transform: translateY(.8rem)
 }
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .details {
+      flex-direction: column;
+    }
+  
+    .profile {
+      margin-bottom: 10px;
+    }
+  
+    .prf-det {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  /* Custom Classes */
+  .favorite {
+    /* Add your custom styles for the favorite class */
+  }
+  
+  .p-t {
+    /* Add your custom styles for the p-t class */
+  }
+  
+  .title {
+    /* Add your custom styles for the title class */
+  }
+  
+  .p {
+    /* Add your custom styles for the p class */
+  }
+  
+  /* Add any additional custom classes with their styles here */
+  

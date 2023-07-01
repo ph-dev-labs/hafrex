@@ -1,6 +1,5 @@
 import React from 'react'
 import './Navbar.css'
-import {FaBars} from 'react-icons/fa'
 function Nav() {
   return (
     <div className='nav'>
