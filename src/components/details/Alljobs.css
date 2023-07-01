@@ -5,6 +5,11 @@
     flex-grow: 1;
 }
 
+.me {
+    transform: translateX(-20px);
+    margin-bottom: 10px;
+}
+
 .all-job {
     font-family: "Open Sans";
     font-weight: 600;

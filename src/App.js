@@ -32,7 +32,7 @@ function App() {
       <Routes>
       <Route exact path='/' element={<Home />} />
       <Route path='/jobdetails' element={<JobDetails />} />
-         <Route path='/alljobs' element={<Job />} />   
+      <Route path='/alljobs' element={<Job />} />   
      </Routes>
 
      </div>

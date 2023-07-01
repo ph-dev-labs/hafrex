@@ -6,6 +6,7 @@ import JobDetailMain from '../../components/main/JobDetailMain'
 import Aside from '../../components/Sidebar/Aside'
 import MobileFooter from '../../components/footer/MobileFooter'
 
+
 function JobDetails() {
   return (
     <div className='job-detail'>

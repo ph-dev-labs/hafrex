@@ -1,9 +1,12 @@
 import React from 'react'
 import './JobDetailMain.css'
+import {useNavigate} from "react-router-dom"
 function JobDetailMain() {
+
+  const navigate = useNavigate()
   return (
     <div className='main-contents'>
-      <img className='main-arrow-back' src={process.env.PUBLIC_URL+"/images/arrowBack.svg"}  alt="arrow-back"/>
+      <img className='main-arrow-back' src={process.env.PUBLIC_URL+"/images/arrowBack.svg"}  alt="arrow-back" onClick={navigate("/alljobs")}/>
       <div className='main-inner-content'>
         <img className='main-logo' src={process.env.PUBLIC_URL+"/images/profileIcon.svg"} alt="logo" />
         <div className='main-inner-content-desc'>

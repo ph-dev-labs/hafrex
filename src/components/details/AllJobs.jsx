@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import "./Alljobs.css";
 import Details from "../Job-details/Details";
 import jobData from "../../utilis/Data";
+import {useNavigate} from "react-router-dom"
 
 const AllJobs = () => {
   const [currentPage, setCurrentPage] = useState(1);
- 
-
+  const navigate = useNavigate()
   const totalResults = 50;
   const resultsPerPage = 10;
   const totalPages = Math.ceil(totalResults / resultsPerPage);
-
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -32,7 +31,7 @@ const AllJobs = () => {
         </button>
       );
     }
-
+    
     return (
       <div className="pagination-container">
         <div
@@ -53,7 +52,9 @@ const AllJobs = () => {
   const renderJobDetails = () => {
     const startIndex = (currentPage - 1) * resultsPerPage;
     const endIndex = startIndex + resultsPerPage;
-
+    const handleClick = () => {
+      navigate("/jobdetails")
+    }
     return jobData
       .slice(startIndex, endIndex)
       .map((job, index) => (
@@ -62,12 +63,14 @@ const AllJobs = () => {
           id={job.id}
           title={job.title}
           company={job.company}
+          onClick={handleClick}
         />
       ));
   };
 
   return (
     <div className="all-jobs">
+       <img className='main-arrow-back me ' src={process.env.PUBLIC_URL+"/images/arrowBack.svg"} onClick={navigate("/")}  alt="arrow-back"/>
       <p className="all-job">All jobs</p>
       <div className="searchfield d-flex flex-column justify-content-evenly">
         <p className="all-job-search h-w">Search</p>

@@ -9,6 +9,10 @@
 
 }
 
+.empty {
+    display: none;
+}
+
 .job-detail-main{
     width: 100%;
     display: flex;

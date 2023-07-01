@@ -3,11 +3,11 @@ import "./Detail.css";
 import { useNavigate } from "react-router-dom";
 const Details = (props) => {
   const [favorite, setFavorite] = useState(false);
-
+  const {onClick} = props
   const handleFavyChange = () => {
     setFavorite((prevFavorite) => !prevFavorite);
   };
-const navigate = useNavigate()
+console.log(props)
   return (
     <div
       className={`d-flex flex-row justify-content-between w-100 details mb-3 ${
@@ -15,7 +15,7 @@ const navigate = useNavigate()
       }`}
     >
       <div className="d-flex flex-row justify-content-evenly w-50">
-        <div className="profile p-t">
+        <div className="profile p-t pp">
           <p className="p-text">AK</p>
         </div>
         <div className="prf-det d-flex flex-column justify-content-around">
@@ -31,7 +31,7 @@ const navigate = useNavigate()
         </div>
       </div>
       <div className="d-flex flex-column justify-content-around">
-        <button onClick={navigate("/jobdetails")}>View details</button>
+        <button onClick={onClick}>View details</button>
         <button>Refer Candidate</button>
         <button onClick={handleFavyChange}>
           {favorite ? "Unmark job" : "Mark job"}
