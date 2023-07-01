@@ -1,0 +1,33 @@
+.job-detail{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #FFF;
+   padding-bottom: 32px;
+
+}
+
+.job-detail-main{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.job-detail-main-wrapper{
+    width: 87.6%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 48px;
+}
+
+
+
+
+/*  */
+@media (max-width:760px){
+    .job-detail-main-wrapper{
+        width: 100%;
+    }
+}

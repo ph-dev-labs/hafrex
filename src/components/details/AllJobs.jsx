@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Alljobs.css";
-import Details from "../../components/Job-details/Details";
+import Details from "../Job-details/Details";
 import jobData from "../../utilis/Data";
 
 const AllJobs = () => {
