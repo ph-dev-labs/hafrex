@@ -69,3 +69,38 @@ select {
     cursor: not-allowed;
   }
   
+@media (max-width:966px){
+    .all-jobs {
+        
+        width: 100%;
+       
+    }
+    select {
+        
+        border-radius: 4px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+    }
+    .justify-content-center{
+        justify-content: space-between;
+    } 
+}
+@media (max-width:919px){
+    
+    select{
+        width: 25%;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .job-details{
+        width: 100%;
+    }
+}
+
+@media (max-width:500px){
+    button {
+        width: auto !important ;
+    }
+}

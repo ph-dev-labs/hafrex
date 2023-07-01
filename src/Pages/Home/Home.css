@@ -22,6 +22,108 @@
     margin-top: 48px;
 }
 
+.sidebar-menu-main{
+    width: 304px;
+    height: 751px;
+    background: var(--surface, #FFF);
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.20), 0px 6px 30px 0px rgba(0, 0, 0, 0.12), 0px 16px 24px 0px rgba(0, 0, 0, 0.14);
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    overflow: hidden;
+}
+
+.andriod-profile{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+.andriod-img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.andrioid-name{
+    margin: 0;
+    color: var(--00-on-surface-high-emphasis, rgba(0, 0, 0, 0.87));
+    font-size: 20px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    margin-bottom: 10px;
+}
+.andrioid-update{
+    color: #1676F3;
+    font-size: 14px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+}
+.andrioid-line{
+    width: 100%;
+    height: 1px;
+    margin-top: 11px;
+    background: var(--surface-overlay, rgba(33, 33, 33, 0.08));
+}
+.sidenav-menu-container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.sidenav-menu{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+    
+}
+.sub-down-space{
+    margin-bottom: 25px;
+}
+.down-space{
+    margin-bottom: 21px;
+}
+.sidenav-item{
+    display: flex;
+    gap:10px;
+}
+.sidenav-item-title{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+.sidenav-subItem{
+    margin-left: 34px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.sidenav-subItem-text{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 13px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    width: 109px;
+}
 
 
 
@@ -29,5 +131,8 @@
 @media (max-width:760px){
     .job-detail-main-wrapper{
         width: 100%;
+    }
+    .sidebar-menu-main{
+        display: block;
     }
 }
