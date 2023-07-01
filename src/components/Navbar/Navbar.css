@@ -52,3 +52,119 @@
   margin-left: 2.5rem;
   transform: translateY(-7px);
 }
+
+
+/* Nav */
+
+/* images */
+
+
+img {
+
+  display: block;
+}
+.nav{
+  width: 100%;
+  max-width: 1440px;
+  height: 78px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  border-bottom: 1px solid #DEE5ED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.nav-wrapper{
+  width: 87.6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.logo-title{
+  color: #8F8F8F;
+  font-size: 16px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.88px;
+  margin: 0;
+}
+.nav-right{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.nav-right p{
+  margin: 0;
+}
+.nav-icon{
+  width: 40px;
+  height: 40px;
+}
+.nav-logo{
+  width: 57px;
+  height: 62.344px;
+}
+
+.nav-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-all-jobs{ 
+  gap:5px;
+}
+.nav-candidate{
+  gap:6px
+}
+.nav-profile{
+  gap: 6px;
+}
+.nav-profile-arrow{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.handburger{
+  font-size: 2rem; 
+  display: flex; 
+  align-items: center;
+  
+}
+.mobile-nav{
+  position: absolute;
+  right:2rem;
+  top: 10px;
+  display: none;
+}
+@media (max-width:760px){
+  .mobile-nav{
+    display: block;
+  }
+  .nav-right{
+    display: none;
+  }
+  .nav-left{
+    display: none;
+  }
+  .nav{
+    height: 30px;
+    border-bottom:none;
+    background: #082B5D;
+  }
+}

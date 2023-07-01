@@ -1,0 +1,64 @@
+[
+    {
+        "id":"1",
+        "title":"Jobs",
+        "icon":"/images/sidebarJob.svg",
+        "subNav":[
+            {
+                "subTitle":"Marked Jobs"
+            },
+            {
+                "subTitle":"Referred Jobs"
+            },
+            {
+                "subTitle":"Closed Jobs"
+            }
+
+        ]
+    },
+    {
+        "id":"2",
+        "title":"Candidates",
+        "icon":"/images/sidbarCandidate.svg",
+        "subNav":[
+            {
+                "subTitle":"Add a candidate to your database"
+            },
+            {
+                "subTitle":"Your Candidates Database"
+            },
+            {
+                "subTitle":"Referred Candidates"
+            },
+            {
+                "subTitle":"Selected Candidates"
+            }
+            
+
+        ]
+    },
+    {
+        "id":"3",
+        "title":"Referrals",
+        "icon":"/images/sidebarReferral.svg"
+        
+    },
+    {
+        "id":"4",
+        "title":"View/Update Profile",
+        "icon":"/images/sidebarProfile.svg"
+        
+    },
+    {
+        "id":"5",
+        "title":"Settings",
+        "icon":"/images/sidebarSetting.svg"
+        
+    },
+    {
+        "id":"6",
+        "title":"Logout",
+        "icon":"/images/sidebarLogout.svg"
+        
+    }
+]

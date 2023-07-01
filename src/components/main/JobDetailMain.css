@@ -1,0 +1,228 @@
+/* .job-detail-main{
+    width: 52.5%;
+    min-width: 633px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #FFF;
+    margin-left: 22px;
+
+}
+.main-contents
+/* .job-detail-main-wrapper{
+    background: #F3FBFF;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    gap:13px;
+    padding-top: 23px;
+} */
+/* .details-main-content{
+    width: 71%;
+
+} */ 
+
+.main-contents{
+    width: 50%;
+    background: #FFF;
+    margin-left: 22px;
+
+}
+.main-inner-content{
+    width:100%;
+    background: #F3FBFF;
+    display: flex;
+    align-items: flex-start;
+    
+    padding-top: 23px;
+    gap: 13px;
+    margin-top: 21px;
+
+}
+.main-logo{
+    margin-left: 42px;
+    margin-top: 23px;
+}
+.main-inner-content-desc{
+    
+    width: 71%;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.main-title{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 35px;
+}
+.main-details{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.main-title-num{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main-list{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main-list li{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.main-list .main-date{
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.main-list .main-date span{
+    margin-left: 22px;
+}
+.main-content-details{
+    margin-top: 55px;
+}
+.main-content-details h1{
+   margin-bottom: 26px;
+}
+.main-content-details h3{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 14px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+.main-content-details p{
+    
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 12px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.main-description{
+    margin-bottom: 20px;
+}
+.main-dates{
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 10px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    display: block;
+}
+.main-qualification{
+    margin-bottom: 20px;
+}
+.main-gap{
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.main-skill{
+    margin-bottom: 41px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.m-text{
+    margin:0
+}
+.main-list-skills li{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 14px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+.btn{
+    
+    margin: 60px auto 55px auto;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: 1px solid #486284;
+    background: #133D7A;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (max-width:1107px){
+    .main-contents{
+        width: 100%; 
+    
+    }
+}
+@media (max-width:760px){
+    .main-contents{
+        width: 100%;
+        margin-left: 0;
+    
+    }
+    .main-arrow-back{
+        margin-left: 20px;
+    }
+    .main-logo{
+        margin-left: 24px;
+        
+    }
+    .main-inner-content{ 
+        
+        margin-top: 40px;
+    
+    }
+    .main-inner-content-desc{ 
+        width: 100%;
+        margin-right: 24px;
+        padding-bottom: 60px;
+    }
+    .btn{
+        display: none;
+    }
+}
