@@ -6,6 +6,7 @@
     border-radius: 5px;
     margin-left: 3.5rem;
     box-shadow: 0.3px 0.3px 0.3px 0.3px #000;
+    
 }
 .short {
     margin-top: 3rem;
@@ -62,4 +63,116 @@
 
 .s {
     transform: translateX(-3.7rem) 
+}
+
+
+/* Side Nav */
+
+.sidenav{
+    width: 23%;
+    min-width: 290px;
+    border-radius: 4px;
+    opacity: 0.8999999761581421;
+    background: #F2F2F2;
+
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 4px 5px 0px rgba(0, 0, 0, 0.14);
+    height: 717px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.sidenav-name{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 38px;
+    
+}
+.sidenav-name-title{
+    color: #333;
+    font-size: 20px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18.88px;
+    margin: 0;
+}
+.sidenav-menu-container{
+    margin-left: 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.sidenav-menu{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+    
+}
+.sub-down-space{
+    margin-bottom: 25px;
+}
+.down-space{
+    margin-bottom: 21px;
+}
+.sidenav-item{
+    display: flex;
+    gap:10px;
+}
+.sidenav-item-title{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+.sidenav-subItem{
+    margin-left: 34px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.sidenav-subItem-text{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 13px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    width: 109px;
+}
+
+/* Right Side bar */
+.Aside-right{
+    width: 23.7%;
+    height: 566px;
+    border-radius: 4px;
+    background: #F2F2F2;
+    margin-left: 15px;
+    min-width: 100px;
+
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 4px 5px 0px rgba(0, 0, 0, 0.14);
+}
+
+@media (max-width:1107px){
+    .Aside-right{
+        display: none;
+    }
+}
+@media (max-width:760px){
+    .sidenav{
+        display: none;
+    }
+
+    
 }
