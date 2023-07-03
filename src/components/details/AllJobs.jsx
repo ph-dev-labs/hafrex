@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Alljobs.css";
 import Details from "../Job-details/Details";
 import jobData from "../../utilis/Data";
-import {useNavigate} from "react-router-dom"
+import {useNavigate, Link} from "react-router-dom"
 
 const AllJobs = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -70,7 +70,7 @@ const AllJobs = () => {
 
   return (
     <div className="all-jobs">
-       <img className='main-arrow-back me ' src={process.env.PUBLIC_URL+"/images/arrowBack.svg"} onClick={navigate("/")}  alt="arrow-back"/>
+      <Link to="/"> <img className='main-arrow-back me ' src={process.env.PUBLIC_URL+"/images/arrowBack.svg"} alt="arrow-back"/></Link>
       <p className="all-job">All jobs</p>
       <div className="searchfield d-flex flex-column justify-content-evenly">
         <p className="all-job-search h-w">Search</p>

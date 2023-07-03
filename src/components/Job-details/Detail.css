@@ -47,6 +47,15 @@ button {
       width: 290px;
       transform: translateX(40px);
     }
+
+    .pp {
+      /* Add your custom styles for the p class */
+      height: 1.66rem;
+      width: 2.66rem;
+      transform: translateX(5px);
+      border-radius: 50%;
+    }
+    
   }
   
   /* Custom Classes */
@@ -65,13 +74,6 @@ button {
 
   }
   
-  .pp {
-    /* Add your custom styles for the p class */
-    height: 1.66rem;
-    width: 2.66rem;
-    transform: translateX(5px);
-    border-radius: 50%;
-  }
   
   /* Add any additional custom classes with their styles here */
   

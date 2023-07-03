@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
-import {useNavigate} from "react-router-dom"
+import { Link } from "react-router-dom";
+import Modal from "../modal/Modal";
+
 function Nav(props) {
-  
-  const {onClick} = props
+  const { onClick } = props;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className="nav">
       <div className="nav-wrapper">
@@ -17,19 +28,23 @@ function Nav(props) {
         </div>
         <div className="nav-right">
           <div className="nav-all-jobs nav-item">
-            <img
-              className="nav-icon"
-              src={process.env.PUBLIC_URL + "/images/JobIcon.svg"}
-              alt="Alljob"
-            />
+            <Link to="/alljobs">
+              <img
+                className="nav-icon"
+                src={process.env.PUBLIC_URL + "/images/JobIcon.svg"}
+                alt="Alljob"
+              />
+            </Link>
             <p>All Jobs</p>
           </div>
           <div className="nav-candidate nav-item">
-            <img
-              className="nav-icon"
-              src={process.env.PUBLIC_URL + "/images/candidateIcon.svg"}
-              alt="candidate"
-            />
+            <Link to="/refer">
+              <img
+                className="nav-icon"
+                src={process.env.PUBLIC_URL + "/images/candidateIcon.svg"}
+                alt="candidate"
+              />
+            </Link>
             <p>Add a Candidate</p>
           </div>
           <div className="nav-profile nav-item">
@@ -37,6 +52,7 @@ function Nav(props) {
               className="nav-icon"
               src={process.env.PUBLIC_URL + "/images/profileIcon.svg"}
               alt="profile"
+              onClick={openModal}
             />
             <div className="nav-profile-arrow">
               <p>My Profile</p>
@@ -55,6 +71,12 @@ function Nav(props) {
           <div className="b-d"></div>
         </div>
       </div>
+      {isModalOpen && (
+        <Modal onClose={closeModal}>
+          <h3>Modal Content</h3>
+          <p>You can add any content you want in the modal.</p>
+        </Modal>
+      )}
     </div>
   );
 }

@@ -182,8 +182,8 @@ img {
 }
 
 .b-d {
-  width: 35px;
+  width: 30px;
   height: 5px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.404);
   margin: 6px 0;
 }

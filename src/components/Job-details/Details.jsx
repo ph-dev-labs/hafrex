@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./Detail.css";
-import { useNavigate } from "react-router-dom";
 const Details = (props) => {
   const [favorite, setFavorite] = useState(false);
   const {onClick} = props
   const handleFavyChange = () => {
     setFavorite((prevFavorite) => !prevFavorite);
   };
-console.log(props)
+
   return (
     <div
       className={`d-flex flex-row justify-content-between w-100 details mb-3 ${
