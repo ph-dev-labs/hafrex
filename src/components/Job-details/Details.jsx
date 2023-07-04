@@ -29,7 +29,7 @@ const Details = (props) => {
           </div>
         </div>
       </div>
-      <div className="d-flex flex-column justify-content-around">
+      <div className="d-flex flex-column justify-content-around cl">
         <button onClick={onClick}>View details</button>
         <button>Refer Candidate</button>
         <button onClick={handleFavyChange}>

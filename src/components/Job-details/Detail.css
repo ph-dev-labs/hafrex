@@ -27,6 +27,12 @@ button {
     margin-right: 1rem;
 }
 
+.cl {
+  margin: 10px;
+  height: 7rem;
+}
+
+
 .p-t {
     transform: translateY(.8rem)
 }
